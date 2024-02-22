@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: "Stage customers"
+
+  - name: stg_orders
+    description: "Stage orders"

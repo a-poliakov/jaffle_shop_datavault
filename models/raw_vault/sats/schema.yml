@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: sat_customer_details
+    description: "Satelite customer"
+
+  - name: sat_order_details
+    description: "Satelite order"

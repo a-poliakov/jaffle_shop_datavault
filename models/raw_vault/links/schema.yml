@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: link_customer_order
+    description: "Link between customer and order"

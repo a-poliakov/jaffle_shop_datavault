@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: hub_customer
+    description: "Hub customers"
+
+  - name: hub_order
+    description: "Hub customers"

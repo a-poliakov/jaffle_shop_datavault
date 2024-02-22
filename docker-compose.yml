@@ -2,16 +2,18 @@ version: '2'
 services:
 
   devcontainer:
-    build: .
-    entrypoint: ["tail", "-f", "/dev/null"]
+    build:
+      context: .
+      args:
+        DBT_VERSION: 1.0.0
     volumes:
       - .:/workspaces/jaffle_shop_dbtvault/
     ports:
-      - 8080:8080
+      - "8080:8080"
 
   postgres:
     image: postgres
     environment: 
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: changeme
     ports:
-      - 5432:5432
+      - "5432:5432"
