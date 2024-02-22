@@ -1,0 +1,4 @@
+ARG DBT_VERSION=0.19.0
+FROM fishtownanalytics/dbt:${DBT_VERSION}
+
+ENV DBT_PROFILES_DIR=.

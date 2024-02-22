@@ -1,0 +1,17 @@
+version: '2'
+services:
+
+  devcontainer:
+    build: .
+    entrypoint: ["tail", "-f", "/dev/null"]
+    volumes:
+      - .:/workspaces/jaffle_shop_dbtvault/
+    ports:
+      - 8080:8080
+
+  postgres:
+    image: postgres
+    environment: 
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
